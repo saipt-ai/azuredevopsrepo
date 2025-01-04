@@ -38,6 +38,7 @@
 					},
 					"enableStaging": false,
 					"validateDataConsistency": false,
+					"dataIntegrationUnits": 8,
 					"translator": {
 						"type": "TabularTranslator",
 						"mappings": [
