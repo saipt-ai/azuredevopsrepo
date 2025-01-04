@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "sqlschooladfresourcenew22"
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "sqlschoolonlineserver.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "PracticeDatabase"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "sqlschool"
+		},
+		"Trigger_ukw_properties_CopyPipeline_ukw_parameters_windowStart": {
+			"value": "@{addhours(trigger().scheduledTime, -24)}"
+		},
+		"Trigger_ukw_properties_CopyPipeline_ukw_parameters_windowEnd": {
+			"value": "@trigger().scheduledTime"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
