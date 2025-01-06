@@ -956,8 +956,7 @@
 						"defaultValue": "blobcontainer"
 					},
 					"Data_Destination_Directory": {
-						"type": "String",
-						"defaultValue": "/ADLSFolder"
+						"type": "String"
 					},
 					"Control_Table_Table_Name": {
 						"type": "String",
